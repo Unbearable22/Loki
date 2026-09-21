@@ -1,0 +1,99 @@
+{
+  "start": {
+    "welcome": "marketplace: забонро интихоб кунед.",
+    "language_saved": "Язык сохранён.",
+    "menu": "Главное меню:"
+  },
+  "language": {
+    "choose": "Выберите язык:"
+  },
+  "menu": {
+    "seller": "🛍 Сатуучунун кабинети",
+    "orders": "📦 Буйрутмалар",
+    "wallet": "💰 Wallet",
+    "team": "👥 Менин командам",
+    "status": "⭐ Статус жана жазылуу",
+    "cooperation": "🤝 Кызматташуу",
+    "notifications": "🔔 Билдирмелер",
+    "language": "🌐 Тил",
+    "help": "ℹ️ Жардам"
+  },
+  "common": {
+    "back": "← Назад",
+    "unknown": "Используйте меню ниже."
+  },
+  "auth": {
+    "required": "Сначала привяжите Telegram к аккаунту marketplace."
+  },
+  "errors": {
+    "backend": "Не удалось получить данные. Попробуйте позже."
+  },
+  "seller": {
+    "title": "Кабинет продавца",
+    "add": "➕ Добавить товар",
+    "list": "📋 Мои товары",
+    "moderation": "🛡 Модерация",
+    "edit": "✏️ Редактировать",
+    "delete": "🗑 Удалить",
+    "form": {
+      "name": "Введите название товара:",
+      "price": "Введите цену:",
+      "stock": "Введите наличие:",
+      "invalid_price": "Цена должна быть неотрицательным числом.",
+      "invalid_stock": "Наличие должно быть целым неотрицательным числом."
+    },
+    "created": "Товар создан. ID: {id}",
+    "deleted": "Товар удалён. ID: {id}",
+    "updated": "Товар обновлён. ID: {id}",
+    "empty": "Товаров нет.",
+    "products": "Ваши товары:",
+    "item": "#{id} — {name}; цена: {price}; наличие: {stock}",
+    "edit_prompt": "Введите новое название товара (для расширенного редактирования используйте backend UI).",
+    "moderation_info": "Статус модерации: {data}"
+  },
+  "orders": {
+    "empty": "Заказов нет.",
+    "item": "Заказ #{id} — статус: {status}; сумма: {total}",
+    "details": "Подробнее",
+    "detail": "Заказ #{id}\\nСтатус: {status}\\nTracking: {tracking}\\nCargo: {cargo}\\nМестоположение: {location}\\nПВЗ: {pvz}\\nОриентировочная доставка: {eta}"
+  },
+  "wallet": {
+    "summary": "Баланс: {total} {currency}\\nДоступно: {available}\\nЗаморожено: {frozen}",
+    "actions": "Доступны операции: история, пополнение и вывод.",
+    "amount": "Введите сумму:",
+    "invalid_amount": "Введите положительное число.",
+    "requested": "Операция создана. ID: {id}; статус: {status}",
+    "empty": "Операций нет.",
+    "operation": "{type}: {amount}; комиссия: {fee}; статус: {status}; дата: {date}"
+  },
+  "team": {
+    "summary": "Команда: {total}\\nАктивные: {active}\\nНеактивные: {inactive}\\nНовые: {new}\\nReferral reward: {reward}\\nПрогресс: {progress}%"
+  },
+  "status": {
+    "summary": "Текущий статус: {current}\\nСледующий: {next}\\nПрогресс: {progress}%\\nУсловия: {conditions}"
+  },
+  "subscription": {
+    "summary": "Подписка: {plan}\\nСтатус: {status}\\nДо: {expires}"
+  },
+  "cooperation": {
+    "company": "Название компании:",
+    "created": "Заявка #{id} создана. Статус: {status}"
+  },
+  "notifications": {
+    "info": "Уведомления обрабатываются из событий основной системы. Настройки можно расширить через backend.",
+    "order_created": "🛒 Новый заказ #{order_id}.",
+    "order_status": "📦 Заказ #{order_id}: новый статус — {status}.",
+    "delivery": "🚚 Доставка #{order_id}: {status}.",
+    "payment": "💳 Платёж: {amount} {currency}.",
+    "subscription_paid": "⭐ Подписка оплачена.",
+    "user_status": "⭐ Ваш статус изменён: {status}.",
+    "team_joined": "👥 В команду добавился новый участник.",
+    "team_status": "👥 Изменился статус участника команды.",
+    "cooperation": "🤝 Обновление заявки на сотрудничество #{application_id}.",
+    "wallet": "💰 Операция wallet: {amount}.",
+    "generic": "🔔 Новое событие в marketplace."
+  },
+  "help": {
+    "text": "Telegram — интерфейс основной marketplace-системы. Пользователи, заказы, товары, wallet, referral, статусы и модерация хранятся в основном backend."
+  }
+}

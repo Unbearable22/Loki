@@ -1,0 +1,16 @@
+CREATE TABLE IF NOT EXISTS telegram_accounts (
+ id BIGSERIAL PRIMARY KEY,
+ telegram_user_id BIGINT NOT NULL UNIQUE,
+ backend_user_id VARCHAR(128),
+ integration_token VARCHAR(1024),
+ locale VARCHAR(16) NOT NULL DEFAULT 'ru',
+ notifications_enabled BOOLEAN NOT NULL DEFAULT TRUE,
+ created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+ updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+);
+CREATE TABLE IF NOT EXISTS processed_events (
+ id BIGSERIAL PRIMARY KEY,
+ event_id VARCHAR(256) NOT NULL UNIQUE,
+ event_type VARCHAR(128) NOT NULL,
+ created_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+);
