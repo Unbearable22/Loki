@@ -1,0 +1,17 @@
+{
+  "version": "1.0.0-full-tz",
+  "generated": "2026-09-16",
+  "modules": [
+    "i18n",
+    "seller",
+    "orders",
+    "cargo",
+    "wallet",
+    "team/referral",
+    "status/subscription",
+    "cooperation",
+    "notifications",
+    "backend integration"
+  ],
+  "source_of_truth": "existing marketplace backend"
+}
